@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>21457087 조은영</title>
+  <style>
+
+  h1{text-align:center;}
+    body{
+      font-family:"Nanumgothic", "Sans-serif" ;
+      line-height:1.6;
+      padding:10%;
+      margin:auto;
+      max-width:600px;
+      background-color:#b0eeff;
+    }
+    .name{
+      margin-top:10px;
+      text-align:right;
+    }
+    hr{
+      background-color:#22cc35; 
+      height: 3.5px; 
+      border-width: 0px;
+      margin-bottom:15px;
+    }
+    ol{margin-left:-40px}
+    ul{margin-left:-40px;}
+    ol > li > ul > li{
+      margin-left:20px;
+      margin-top:5px;
+    }
+
+    
+    h2{
+      margin-top:40px;
+      color:#16cc7e;
+    }
+    .point{
+      font-weight:bold;
+      background-color:#16cc7e;
+      padding-right:5px;
+      padding-left:5px;
+      padding-top:1px;
+      padding-bottom:1px;
+      border-radius:3px;
+      
+    }
+    .pointtwo{
+      
+      background-color:#656634;
+      color:#ffffff;
+      padding-right:5px;
+      padding-left:5px;
+    }
+    table{
+      
+      margin:auto;
+      margin-top:20px;
+      margin-bottom:40px;
+      box-shadow:2px 3px 1px grey; 
+      text-align:center;
+      background-color:#f0f0f0;
+    }
+    td{
+      padding-right:12px;
+      padding-left:12px;
+    }
+    th{
+      padding-right:12px;
+      padding-left:12px;
+    }
+    .last{
+      font-style:italic;
+      font-size:12px;
+    }
+    .pointlist{
+       font-weight:bold;
+    }
+    .ollist{
+       margin-top:15px; 
+      margin-bottom:15px;
+    }
+    
+     p {
+       margin-top:10px;
+     margin-bottom:10px;
+     }
+    
+  </style>
+</head>
+<body>
+  <h1>중간고사</h1>
+  <p class="name">조은영</p>
+  <h2>블럭 요소 목록</h2>
+  <hr>
+  <p>다음은 HTML에서 자주 사용되는 목록입니다.</p>
+  <ol>
+    <li><span class="point">p</span>: 단락 (Paragraph)</li>
+    <li><span class="point">h1</span>: 큰 제목 (Heading 1)</li>
+    <li><span class="point">ul</span>: 순서 없는 목록(Unordered List)</li>
+    <li><span class="point">ol</span>: 순서 있는 목록(Ordered List)</li>
+    <li><span class="point">table</span>: 표(table)</li>
+  </ol>
+  <h2>인라인 요소 목록</h2>
+  <hr>
+  <p>다음은 HTML에서 자주 사용되는 목록입니다.</p>
+  <ul>
+    <li><span class="point">a</span>: 하이퍼링크 (Anchor)</li>
+    <li><span class="point">img</span>: 이미지 (Image)</li>
+    <li><span class="point">span</span>: 일반 용도의 인라인 (Span)</li>
+    <li><span class="point">strong</span>: 중요 (Strong)</li>
+    <li><span class="point">em</span>: 강조(Emphasis)</li>
+  </ul>
+  <h2>HTML이란?</h2>
+  <hr>
+  <p>HTML은 <span class="point">하이퍼텍스트 마크업 언어(Hypertext Markup Language)</span>의 약자로, 웹 페이지를 만들 때 사용되는 문서 형식입니다.</p>
+  <p>하이퍼텍스트(Hypertext)란 하이퍼링크(Hyperlink)를 담고 있는 문서를 뜻합니다. 하이퍼링크는 문서들이 서로 연결되어 있는 고리를 말합니다.</p>
+  <h2>CSS란?</h2>
+  <hr>
+  <p>CSS는 Cascading Stylesheet의 약자이며 HTML 같은 마크업 언어로 작성된 문서를 꾸미기 위해 사용합니다. HTML 문서의 <span class="pointtwo">head</span> 요소 안에 <span class="pointtwo">style</span> 요소를 넣고 CSS 코드를 적으면 해당 문서를 다양하게 꾸밀 수 있습니다.</p>
+  <p>CSS에 대한 더 자세한 설명은 <a href="#">CSS</a>문서를 참고하세요.</p>
+  <h2>중첩된 목록</h2>
+  <hr>
+  <p>목록 요소 안에 또다른 목록 요소를 중첩하여 사용할 수 있습니다.</p>
+  <ol>
+    <li class="ollist"><span class="pointlist">홍길동</span>
+      <ul>
+        <li>지각 없음</li>
+        <li>결석 없음</li>
+        <li>과제 만점</li>
+    </ul>
+    </li>
+    <li class="ollist"><span class="pointlist">이몽룡</span>
+      <ul>
+        <li>지각 2회</li>
+        <li>결석 없음</li>
+        <li>과제 만점</li>
+      </ul>
+    </li>
+  </ol>
+  <h2>표 만들기</h2>
+  <hr>
+  <p>표를 만들려면 <span class="pointtwo">table</span> 요소를 사용합니다.</p>
+  <table>
+    <tbody>
+      <tr>
+      <th>음료</th>
+        <th>가격</th>
+        <th>알콜</th>
+        </tr>
+      <tr>
+        <td>아메리카노</td>
+        <td>2,000</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>카페모카</td>
+        <td>2,500</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>맥주</td>
+        <td>3,000</td>
+        <td>Y</td>
+      </tr>
+      </tbody>
+  </table>
+  <p class="last">2014년 10월 14일 중간고사, 조은영 작성</p>
+</body>
+</html>
