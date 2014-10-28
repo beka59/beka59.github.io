@@ -3,93 +3,135 @@
 <head>
   <meta charset="utf-8">
   <title>차례</title>
+  <script>
+function test(idMyDiv){
+     var objDiv = document.getElementById(idMyDiv);
+
+     if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+      else{ objDiv.style.display = "block"; }
+}
+</script>
   <style>
-    *{line-height:1.4;
+    *{line-height:1.7;
       font-family:Nanumgothic;
-     font-size:7pt;
+     font-size:12pt;
+      
     }
     body{
+      max-width:40%;
       margin:auto;
       padding:auto;
-      max-width:600px;
+      margin-left:30%;
+      margin-right:25%;
     }
     .left{
-      max-width:216px;
+      max-width:500px;
     }
     .lefttwo{
-     max-width:315px;
+     
       text-align:left;
       float:left;
-      margin-top:50px;
+      margin-top:px;
 
       
     }
     .rightone{
-      max-width:410px;
+      
       text-align:right;
       
     }
  
        .righttwo{
    
-      text-align:right;
-         float:right;
-         margin-top:185px;
-         margin-right:260px;
+      text-align:left;
+         
+         margin-top:400px;
+         
     }
     a {
-      font-size:18pt;
+      text-align:right;
+      text-decoration:none;
+      color:black;
+    }
+    .contents{
+      font-size:40pt;
       text-align:right;
       float:right;
       margin:0;
       margin-right:px;
-      text-decoration:none;
-      color:black;
+      
     }
     .three{
-     margin-right:-10px;
+     
       text-align:right;
       float:right;
-      margin-top:-265px;
+      
     }
-   
+    div{
+      text-align:right;
+    }
+    
+    .a2{margin-left:747px;}
   </style>
 </head>
 <body>
-  <p><a href="http://beka59.github.io/contents2">↔차례</a></p>
-  <p class="left"><ins>김선정</ins><br>
+  <p><a class="contents" href="http://beka59.github.io/contents2" onMouseOver="this.innerHTML='CONTENTS'" onMouseOut="this.innerHTML='↔차례'">↔차례</a>
+	</p>
+  <p class="left"><b>김선정</b><br>
 플랫폼:임시적프로젝트 <strong>4</strong><br> 
     “I have nothing to say and I am saying it” <strong>14</strong></p>
   <p class="rightone">
-    
-<strong>존 케이지/김순기</strong> 26<br>
-<strong>길버트 & 조지</strong> 28</p>
-  <p class="left"><ins>바르또 마리</ins><br>
+    <a href="#" onclick="test('testdiv'); return false;">▼</a>
+<div id="testdiv" style="display:none">
+<p>
+  <strong>존 케이지/김순기</strong> 26<br>
+<strong>길버트 & 조지</strong> 28
+  </p>
+</div>
+  <p class="left"><b>바르또 마리</b><br>
 «무대 없는 연극»과 «세상이라는 거대한 연극»:<br>
     20세기 미술 안에서의 연극성에 대한 두 가지 실험 <strong>30</strong></p>
-  <p class="rightone"><strong>살바도르 달리</strong> 40<br>
+  <p class="rightone">
+        <a href="#" onclick="test('testdiv2'); return false;">▼</a>
+<div id="testdiv2" style="display:none">
+<strong>살바도르 달리</strong> 40<br>
 <strong>다비드 라멜라스</strong> 42<br>
 <strong>브루스 나우만</strong> 44<br>
 <strong>로버트 모리스</strong> 46</p>
-  <p class="leftone"><ins>박소현</ins><br>
+</div>
+  <p class="leftone"><b>박소현</b><br>
 앵포르멜의 지정학과 ‘행동하는 화가’ : 그 개념적 <br>재배치의 계보 <strong>48</strong></p>
-  <p class="rightone">    
+  <p class="rightone">
+     <a href="#" onclick="test('testdiv3'); return false;">▼</a>
+<div id="testdiv3" style="display:none">
 <strong>앨런 캐프로</strong> 72<br>
 <strong>비토 아콘치</strong> 74<br>
 <strong>트리샤 브라운</strong> 76<br>
 <strong>이본느 라이너</strong> 78
   </p>
-  <p class="left"><ins>수미토모 후미히코</ins><br>
+
+</div>
+  <p class="left"><b>수미토모 후미히코</b><br>
     전후 일본 예술의 민족지적 전환 <strong>80</strong></p>
   <p class="rightone">
-    <strong>무라카미 사부로</strong> 88<br>
+         <a href="#" onclick="test('testdiv4'); return false;">▼</a>
+<div id="testdiv4" style="display:none">
+ <strong>무라카미 사부로</strong> 88<br>
     <strong>플레이</strong> 90
   </p>
-  <p class="left"><ins>슈양</ins><br>
+
+</div>
+  <p class="left"><b>슈양</b><br>
     중국의 퍼포먼스와 라이브 아트 <strong>92</strong></p>
-  <p class="rightone"><strong>픽션 인 차이나</strong> 98<br>
+  <p class="rightone">  <a href="#" onclick="test('testdiv5'); return false;">▼</a>
+<div id="testdiv5" style="display:none">
+ <strong>픽션 인 차이나</strong> 98<br>
     <strong>다다오 라이브 아트 페스티벌</strong> 100</p>
-  <div class="three"><p><strong>마리나 아브라모 비치</strong> 106<br>
+
+</div>
+  <a class="a2" href="#" onclick="test('testdiv6'); return false;">▼</a>
+<div id="testdiv6" style="display:none">
+ <div class="three"><p><strong>마리나 아브라모 비치</strong> 106<br>
 <strong>니나 바이에르 & 마리 룬</strong> 110<br>
 <strong>안젤라 블로흐</strong> 114<br>
 <strong>쟈넷 카디프</strong> 118<br>
@@ -105,7 +147,7 @@
 <strong>루이 자콥</strong> 158<br>
 <strong>김소라</strong> 164<br>
 <strong>김순기</strong> 168<br>
-<strong>수라시</strong> 쿠솔롱 170<br>
+<strong>수라시 쿠솔롱</strong> 170<br>
 <strong>이강소</strong> 174<br>
 <strong>무라이 게이데쓰</strong> 178<br>
 <strong>남화연</strong> 182<br>
@@ -120,15 +162,16 @@
 <strong>시징맨</strong> 220<br>
 <strong>슈 젠</strong> 226<br>
 <strong>윤동구</strong> 230</p></div>
+</div>
   <div class=righttwo><p>
 강연·토크 <strong>234</strong><br>
 비디오 프로그램 <strong>264</strong><br>
 음악극 공연 <strong>272</strong><br>
 플랫폼 요코하마 <strong>276</strong></p></div>
   <div class="lefttwo"><p>
-    <ins>정현</ins><br>
+    <b>정현</b><br>
 아방가르드와 걷기 <strong>282</strong><br>
-<ins>배은아</ins><br>
+<b>배은아</b><br>
 미래의 과거: 플랫폼 서울 2008 <strong>292</strong>
   </p></div>
 </body>
