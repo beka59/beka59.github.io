@@ -3,93 +3,133 @@
 <head>
   <meta charset="utf-8">
   <title>Contents</title>
+  <script>
+function test(idMyDiv){
+     var objDiv = document.getElementById(idMyDiv);
+
+     if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+      else{ objDiv.style.display = "block"; }
+}
+</script>
   <style>
-    *{line-height:1.4;
+    *{line-height:1.5;
       font-family:Nanumgothic;
-     font-size:7pt;
+    font-size:12pt;
+      
     }
     body{
+      max-width:40%;
       margin:auto;
       padding:auto;
-      max-width:600px;
+      margin-left:30%;
+      margin-right:25%;
     }
     .left{
-      max-width:216px;
+      max-width:540px;
     }
     .lefttwo{
-     max-width:315px;
+     
       text-align:left;
       float:left;
-      margin-top:55px;
+      margin-top:px;
 
       
     }
     .rightone{
-      max-width:410px;
+      
       text-align:right;
       
     }
  
        .righttwo{
    
-      text-align:right;
-         float:right;
-         margin-top:147px;
-         margin-right:245px;
+      text-align:left;
+         
+         margin-top:400px;
+         
     }
     a {
-      font-size:18pt;
+      
       text-align:right;
-      float:right;
-      margin:0;
-      margin-right:-14px;
       text-decoration:none;
       color:black;
     }
     .three{
-     margin-right:-10px;
+     
       text-align:right;
       float:right;
-      margin-top:-265px;
+      
     }
-   
+     .contents{
+      font-size:40pt;
+      text-align:right;
+      float:right;
+      margin:0;
+      margin-right:px;
+      
+    }
+     div{
+      text-align:right;
+    }
+    .a2{margin-left:747px;}
   </style>
 </head>
 <body>
-  <p><a href="http://beka59.github.io/contents1">↔CONTENTS</a></p>
-  <p class="left"><ins>Sunjung Kim</ins><br>
+  <p><a class="contents" href="http://beka59.github.io/contents2" onMouseOver="this.innerHTML='차례'" onMouseOut="this.innerHTML='↔CONTENTS'">↔CONTENTS</a></p>
+  <p class="left"><b>Sunjung Kim</b><br>
 Platform: A Tentative Project <strong>4</strong><br> 
     “I have nothing to say and I am saying it”  <strong>14</strong></p>
   <p class="rightone">
-    
+    <a href="#" onclick="test('testdiv'); return false;">▼</a>
+<div id="testdiv" style="display:none">
 <strong>John Cage/ Kim Soun Gui</strong> 26<br>
 <strong>Gilbert & George</strong> 28</p>
-  <p class="left"><ins>Bartomeu Marí </ins><br>
+</div>
+    
+  <p class="left"><b>Bartomeu Marí </b><br>
 “A Theatre Without Theatre“ and ”Great Theatre of the World“ : Two Expriments with Theatricality in the Arts of the 20th Century <strong>30</strong></p>
-  <p class="rightone"><strong>Salvador Dalí</strong> 40<br>
+  <p class="rightone">
+     <a href="#" onclick="test('testdiv1'); return false;">▼</a>
+<div id="testdiv1" style="display:none">
+<strong>Salvador Dalí</strong> 40<br>
 <strong>David Lamelas</strong> 42<br>
 <strong>Bruce Nauman</strong> 44<br>
 <strong>Robert Morris</strong> 46</p>
-  <p class="leftone"><ins>Sohyun Park</ins><br>
+</div>
+  <p class="leftone"><b>Sohyun Park</b><br>
 The Geopolitics of Informel and the “Acting Artist” :<br> The Genealogy of Its Conceptual Relocation <strong>48</strong></p>
-  <p class="rightone">    
+  <p class="rightone">
+    <a href="#" onclick="test('testdiv2'); return false;">▼</a>
+<div id="testdiv2" style="display:none">
 <strong>Allan Kaprow</strong> 72<br>
 <strong>Vito Acconci</strong> 74<br>
 <strong>Trisha Brown</strong> 76<br>
 <strong>Yvonne Rainer</strong> 78
   </p>
-  <p class="left"><ins>
-Fumihiko Sumitomo</ins><br>
+</div>
+
+  <p class="left"><b>
+Fumihiko Sumitomo</b><br>
     The Ethnographical Turn Occurring in Japanese Post-War Art <strong>80</strong></p>
   <p class="rightone">
+    <a href="#" onclick="test('testdiv3'); return false;">▼</a>
+<div id="testdiv3" style="display:none">
     <strong>Saburo Murakami</strong> 88<br>
     <strong>PLAY</strong> 90
   </p>
-  <p class="left"><ins>Shu Yang</ins><br>
+</div>
+
+  <p class="left"><b>Shu Yang</b><br>
     Performance and Live Art in China <strong>92</strong></p>
-  <p class="rightone"><strong>Action in China</strong> 98<br>
+  <p class="rightone">
+    <a href="#" onclick="test('testdiv4'); return false;">▼</a>
+<div id="testdiv4" style="display:none">
+    <strong>Action in China</strong> 98<br>
     <strong>DaDao Live Art Festival </strong> 100</p>
-  <div class="three"><p><strong>Marina Avramović</strong> 106<br>
+</div>
+   <a class=a2 href="#" onclick="test('testdiv5'); return false;">▼</a>
+<div id="testdiv5" style="display:none">
+   <div class="three"><p><strong>Marina Avramović</strong> 106<br>
 <strong>Nina Beier & Marie Lund</strong> 110<br>
 <strong>Angela Bulloch</strong> 114<br>
 <strong>Janet Cardiff </strong> 118<br>
@@ -120,15 +160,17 @@ Fumihiko Sumitomo</ins><br>
 <strong>Xijing Men</strong> 220<br>
 <strong>Xu Zhen</strong> 226<br>
 <strong>Dong Koo Yun</strong> 230</p></div>
+</div>
+  
   <div class=righttwo><p>
 Lectures & Talks <strong>234</strong><br>
 Video Screening Program <strong>264</strong><br>
 Musical Theatre <strong>272</strong><br>
 Platform Yokohama <strong>276</strong></p></div>
   <div class="lefttwo"><p>
-    <ins>Hyun Jung</ins><br>
+    <b>Hyun Jung</b><br>
 The Avant-Garde and Walking <strong>282</strong><br>
-<ins>Enna Bae</ins><br>
+<b>Enna Bae</b><br>
 The Future Past: Platform Seoul 2008 <strong>292</strong>
   </p></div>
 </body>
