@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>내가 잠들기 전에</title>
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+    *{color:white;}
+    body{
+      font-family:"Malgun Gothic", "Sans-serif";
+      background-color:black;
+      background-image: url('https://dl.dropboxusercontent.com/u/8906188/kaywon/saraobao23/background.jpg');
+
+      background-size:100%;
+      background-position:50% -10%;
+      background-height: 50%;
+      background-repeat: no-repeat;
+      max-width:100%;
+      margin:3%;
+      padding:auto;
+      text-align:center;
+      margin-bottom: 5%;
+    }
+    .name0{
+      margin-left:15%;
+    }
+    .name1{
+      
+      
+    
+      margin-right: 16%;
+      font-weight: bold;
+      font-size:300%;
+      color:#ffffff;
+      
+    }
+    .name2{
+      font-size: 120%;
+      font-family: "Yanone Kaffeesatz", "sans-serif";
+      color:#b2b2b2;
+      
+    }
+        .name2 b{
+      color:#b2b2b2;
+    }
+    h2{
+ 			display: none;
+ 		}
+    .explain1{
+      color:#bab9b7;
+    font-size:250%;
+    margin-bottom: 20%;
+    }
+    .explain2-1,.explain2-2,.explain2-3{
+      font-family:"휴먼명조","Serif";
+      letter-spacing:-2px;
+      font-size:700%;
+      text-shadow: 3px 3px 10px gray;}
+    }
+    .explain2-1{margin-top:40%;}
+    .explain2-2{
+      margin-top:16%;
+      margin-bottom:10%;}
+    .explain2-3{margin-bottom:35%;}
+    .explain3{
+      font-size:250%;
+      color:#dfc7a3;
+    }
+    .title{
+      width: 98%;
+      margin-top: 1.5%;
+      margin-bottom: -1%;
+    }
+    .subtitle{
+      margin-left:5px;
+      font-size:300%;
+      color:#982b26;
+    letter-spacing:50.5pt;
+    font-family: "Roboto Condensed", "sans-serif";
+    }
+
+    ul{
+ 	    list-style-type: none;
+ 		padding-left: 0;
+    margin-left: 5%;
+        text-align:center;
+      }
+
+    
+    li{
+display: inline;
+padding-right: 5px;
+border-right-width: 2px solid black;
+    }
+    .date{
+      color:#77a7bb;
+      font-size:300%;
+      margin-left: 10%;
+      margin-right:10%;
+
+    }
+    .un-right, .un-left{width:20%;
+      margin-bottom: -2%;}
+    .un-right{text-align: right;}
+    .un-left{text-align: left;
+     }
+     a{text-decoration: none;}
+  </style>
+</head>
+  
+<body>
+  <h2>주연</h2>
+  <ul class="name0">
+    <li class="name1"><a href="http://beka59.github.io/colin">콜린 퍼스</a></li>
+    <li class="name1"><a href="http://beka59.github.io/nicole">니콜 키드먼</a></li>
+    <li class="name1"><a href="http://beka59.github.io/mark">마크 스트롱</a></li>
+  </ul>
+  <p class="explain1">＜프로메테우스＞ 리들리 스콧 제작</p>
+  <p class="explain2-1"><a href="http://beka59.github.io/story">기억을 잃은 여자</a></p>
+  <p class="explain2-2"><a href="http://beka59.github.io/story">기억을 찾아주려는 두 남자</a></p>
+  <p class="explain2-3"><a href="http://beka59.github.io/story">내가 누구인지 알아야 한다</a></p>
+  <p class="explain3">영·미 아마존 스릴러 1위!</p>
+  <p class="explain3">＜해리포터＞ 이후 미국 베스트셀러 1위의 데뷔작</p>
+  <h1><img class="title" alt="내가 잠들기 전에" src="https://dl.dropboxusercontent.com/u/8906188/kaywon/saraobao23/title.png
+"></h1>
+  <p class="subtitle">BEFORE I GO TO SLEEP</p>
+  
+  <h2>출연 및 연출</h2>
+  <ul>
+    <li class="name2"><b>MILLENIUM FILMS</b></li>
+    <li class="name2">PRESENTSA <b>SCOTT FREE</b> AND <b>MILLENNIUM FILMS</b></li>
+    <li class="name2">PRODUCTION IN ASSOCIATION WITH <b>STUDIO CANAL</b></li>
+    <li class="name2">A FILM BY <b>ROWN JOFFE</b></li>
+    <li class="name2"><b>NICOLE KIDMAN</b></li>
+    <li class="name2"><b>COLIN FIRTH</b></li>
+    <li class="name2"><b>MARK STRONG</b></li>
+    <li class="name2"><b>"BEFORE I GO TO SLEEP"</b></li>
+    <li class="name2"><b>ANNE-MARIE DUFF</b></li>
+    <li class="name2">CASTING BY <b>NINA GOLD</b></li>
+    <li class="name2">PRODUCTION SOUND MIXER <b>SIMON HAYES AMPS CAS</b></li>
+    <li class="name2">MUSIC BY <b>EDWARD SHEARMUR</b></li>
+    <li class="name2">COSTUME DESIGNER <b>MICHELE CLASPTON</b></li>
+    <li class="name2">EDITOR <b>MELANIE ANN OLIVER</b></li>
+    <li class="name2">PRODUCTION DESIGNER <b>KAVE QUINN</b></li>
+    <li class="name2">DIRECTOR OF PHOTOGRAPHY <b>BEN DAVIS BSC</b></li>
+    <li class="name2">CO PRODUCER <b>PETER HESLOP</b></li>
+    <li class="name2">EXECUTIVE PRODUCERS <b>DANNY PERKINS</b></li>
+    <li class="name2"><b>JENNY BORGARS</b></li>
+    <li class="name2"><b>AVI LERNER</b></li>
+    <li class="name2"><b>TREVOR SHORT</b></li>
+    <li class="name2"><b>KRISTINA DUBIN</b></li>
+    <li class="name2"><b>BOAZ DAVIDSON</b></li>
+    <li class="name2"><b>JOHN THOMPSON</b></li>
+    <li class="name2"><b>GEYER KOSINSKI</b></li>
+    <li class="name2">EXECUTIVE PRODUCER <b>RIDLEY SCOTT</b></li>
+    <li class="name2">PRODUCED BY <b>MARK GILL MATT O'TOOLE</b></li>
+    <li class="name2">PRODUCED BY <b>LIZA MARSHALL</b></li>
+    <li class="name2">BASED ON THER NOVEL BY S.J. WATSON</li>
+    <li class="name2">WRITTEN AND DIRECTED BY <b>ROWAN JOFFE</b></li>
+  </ul>
+  <h2>협찬</h2>
+  <img class="un-left" alt="MILLENIUM FILMS, SCOTT FREE, STUDIOCANAL" src="https://dl.dropboxusercontent.com/u/8906188/kaywon/saraobao23/un-left.jpg">
+  <span class="date">2014.10 한·미 동시 개봉</span>
+  <img class="un-right" alt="수입·제공 누리픽쳐스, 배급·공동제공 영화사 진진" src="https://dl.dropboxusercontent.com/u/8906188/kaywon/saraobao23/un-right.jpg">
+</body>
+</html>
