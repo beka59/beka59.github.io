@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inbox - Primary</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        ul{
+            padding-left: 0;
+        }
+        li{
+            list-style-type: none;
+            
+                   }
+
+        header, section.pane {
+            padding: 1em 1em 0.6em 1em;
+        }
+
+        header {
+            width: 100%;
+            height: 52px;
+            background-color: #DA4336;
+            color: white;
+            display: inline-block;
+            
+        }
+        header div {
+         display: inline;
+        }
+
+        header .menu {
+            display: inline-block;
+            width: 50px;
+        }
+
+        header h1 {
+            display: inline;
+            font-size: 1rem;
+            font-weight: normal;
+            vertical-align: top;
+        }
+
+        section.side {
+            position: absolute;
+            top: 52px;
+            left: 0;
+            width: 64px;
+            bottom: 0;
+            background-color: white;
+        }
+        section.mainarea {
+            position: absolute;
+            top: 52px;
+            left: 64px;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            box-shadow: -1px 0px 6px #CCC;
+        }
+
+        section.list,
+        section.content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: white;
+            box-shadow: -1px 0px 6px #CCC;
+            overflow-y: scroll;
+        }
+
+        section.list {
+            width: 40%;
+            left: 0;
+            z-index: 1;
+        }
+        section.content {
+            width: 60%;
+            right: 0;
+            padding: 3%;
+        }
+        section.side.pane{
+            vertical-align: top;
+        }
+        @media (max-width:800px) {
+            .content.pane{
+                display: none;
+            }
+            .list.pane{
+                width: 100%;
+            }
+        }
+        .side.pane div{
+            margin:20%;
+        }
+        a{
+            color: #2875f6;
+            text-decoration: none;
+        }
+        .delete,.mail,.folder,.more_vert{
+            margin-left: 1%;
+        }
+        .archive{
+            margin-left: 35%;
+        }
+        .search{
+            margin-left: 32%;
+        }
+        .li{
+            color: #8d8d8d;
+        }
+        
+        .people2,.local_offer2,.error2{
+            margin:2%;
+        }
+        
+        .people2,.local_offer2,.error2,.사람4,.사람5,.사람6,.사람7,.사람8,.사람9,.사람10,.사람11,.사람12{
+            float: left;
+        }
+        
+      
+        .content.pane div{padding: 1%;
+
+        }
+        .last{margin-left: 15%;
+
+        }
+        .last ul{display: inline;
+             float: left;
+             margin: 10%;
+             text-align: center;
+
+        }
+        .여백{
+            height: 50%;
+        }
+        
+.list.pane span{
+
+}
+.new1{
+    background-color: #4583e8;
+
+}
+.new2{background-color:#00a762;}
+.new3{
+    background-color: #e9b317;
+}
+.new1,.new2,.new3{
+
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    margin-top: -10px;
+}
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+li:first-child{
+    font-size: 1.5em;
+}
+.clock1,.clock2,.date1,.date2,.date3,.date4,.date5{
+    float: right;
+    font-size: 13px;
+    font-weight: bold;    
+}
+.date4,.date5{
+    font-size: 10pt;
+}
+.clock1,.date1,.date3,.date4,.date5{
+    color: #acacac;
+}
+.clock2,.date2{
+    color: #2e7ef6;
+}
+.사람4,.사람5,.사람6,.사람7,.사람8,.사람9{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right:3%;
+    margin-top: -3%;
+    width: 50px;
+height: 100px;    
+border-radius: 100px;
+
+}
+.work,.fun,.family{
+    padding-left: 1%;
+    padding-right:1%;
+}
+.work{
+    color: #ffffff;
+    background-color: #fd4b23;
+}
+.fun{color: #253c81;
+    background-color: #b3ccf6;
+}
+.family{
+    color: #20535e;
+   background-color: #95d6e3;
+}
+.inbox{
+    color: #919191;
+    background-color: #dcdcdc;
+}
+h2{
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.사람1,.사람2,.사람3{
+    width: 30px;
+height: 30px;
+border-radius: 50px;
+
+}
+.사람10,.사람11,.사람12{
+    margin:2%;
+width: 50px;
+height: 50px;
+border-radius: 50px;
+}
+.replay{
+    margin-left: 70%;
+}
+
+
+    </style>
+</head>    
+<body>
+    <header>
+        <div class="menu">
+            <img alt="menu" src="http://google.github.io/material-design-icons/navigation/svg/ic_menu_24px.svg">
+        </div>
+        <h1>Primary</h1>
+             <div class="search">
+            <img alt="search" src="http://google.github.io/material-design-icons/action/svg/ic_search_24px.svg">
+        </div>
+         <div class="archive">
+        <img alt="archive" src="http://google.github.io/material-design-icons/content/svg/ic_archive_24px.svg">
+        </div>
+         <div class="delete">
+         <img alt="delete" src="http://google.github.io/material-design-icons/action/svg/ic_delete_24px.svg">
+         </div>
+          <div class="mail">
+         <img alt="mail" src="http://google.github.io/material-design-icons/content/svg/ic_mail_24px.svg">
+         </div>
+          <div class="folder">
+         <img alt="folder" src="http://google.github.io/material-design-icons/file/svg/ic_folder_24px.svg">
+         </div>
+          <div class="more_vert">
+         <img alt="more_vert" src="http://google.github.io/material-design-icons/navigation/svg/ic_more_vert_24px.svg">
+         </div>
+
+    </header>
+
+    <section class="side pane">
+        <div class="사람1">
+        <img  class="사람1" alt="사람1" src="http://media-cache-ec0.pinimg.com/736x/4f/95/1c/4f951c737641a9126f9adf5bf1ee8e22.jpg">
+        </div>
+
+        <div class="inbox">
+        <img alt="inbox" src="http://google.github.io/material-design-icons/content/svg/ic_inbox_24px.svg">
+        </div>
+
+        <div class="people">
+        <img alt="people" src="http://google.github.io/material-design-icons/social/svg/ic_people_24px.svg">
+        </div>
+
+        <div class="local_offer">
+        <img alt="local_offer" src="http://google.github.io/material-design-icons/maps/svg/ic_local_offer_24px.svg">
+        </div>
+
+        <div class="error">
+        <img alt="error" src="http://google.github.io/material-design-icons/alert/svg/ic_error_24px.svg">
+        </div>
+        <div class="여백"> </div>
+        <div class="사람2">
+        <img class="사람1" alt="사람2" src="http://media-cache-ak0.pinimg.com/236x/40/a2/2a/40a22a20efe03683597502dd9a6acbef.jpg">
+        </div>
+
+        <div class="사람3">
+        <img class="사람1" alt="사람3" src="http://media-cache-ec0.pinimg.com/736x/2c/38/b2/2c38b22d4828109565ebc0d3d93ba640.jpg">
+        </div>
+
+    </section>
+    <section class="mainarea">
+        <section class="list pane">
+            <div>
+                <div class="people2">
+            <img alt="people" src="http://google.github.io/material-design-icons/social/svg/ic_people_24px.svg">
+            </div>
+            <ul class=>
+                <li><b>Social</b></li>
+                <span class="new1">1 new</span>
+                <li class="li">Google+</li>
+            </ul>
+                
+            </div>
+            <hr>
+            <div>
+                <div class="local_offer2">
+                <img alt="local_offer" src="http://google.github.io/material-design-icons/maps/svg/ic_local_offer_24px.svg">
+                </div>
+            <ul>
+                <li><b>Promotions</b></li>
+                <span class="new2">2 new</span>
+                <li class="li">Zegat,Google Offers</li>
+            </ul>
+                
+            </div>
+            <hr>
+            <div><div class="error2">
+                <img alt="error" src="http://google.github.io/material-design-icons/alert/svg/ic_error_24px.svg">
+                </div>
+            <ul>
+                <li><b>Updates</b></li>
+                 <span class="new3">1 new</span>
+                <li class="li">Google Play</li>
+            </ul>
+               
+            </div>
+            <hr>
+            <div>
+                <img class="사람4" alt="사람4" src="http://media-cache-ec0.pinimg.com/236x/b6/5d/a3/b65da312b3ed0612c76edb0ac1f305c7.jpg">
+            <ul>
+                <li>Andy Brown<span class="clock1">1:45 PM</span></li>
+                <li class="li">Bring Your Parents to Work Day!<br>Hey! What do you think about a Team Lunch: Parent...<span class="work">work</span><img alt="star_outline" src="http://google.github.io/material-design-icons/toggle/svg/ic_star_outline_24px.svg"></li>
+            </ul>
+                
+            </div>
+            <hr>
+            <div>
+                <img class="사람5" alt="사람5" src="http://media-cache-ec0.pinimg.com/236x/f9/21/c1/f921c1406f7f63d82e9b050d50abb17e.jpg">
+                <ul>
+                <li><b>Keri Anderson</b><span class="clock2"><img alt="attachment" src="http://google.github.io/material-design-icons/file/svg/ic_attachment_24px.svg"> 1:39 PM</span></li>
+                <li><b>Picture from last Saturday</b></li>
+                <li class="li">Check out the new friend we made, Merrill and I ran into him...<img alt="star_outline" src="http://google.github.io/material-design-icons/toggle/svg/ic_star_outline_24px.svg"></li>
+            </ul>
+        </div>
+        <hr>
+            <div>
+                <img class="사람6" alt="사람6" src="http://media-cache-ak0.pinimg.com/736x/93/99/1b/93991b34d6f049001f3093c5fe8e4555.jpg">
+                <ul>
+                <li>Regis, Peter,  Rachel 3<span class="date1">Sep 29</span></li>
+                <li>Board game night?</li>
+                <li class="li">Sunday works! If you can get Dexter and Sophie I will...<span class="fun">Fun</span>  <img alt="star" src="http://google.github.io/material-design-icons/toggle/svg/ic_star_24px.svg"></li>
+               </ul>
+               
+        </div>
+        <hr>
+          <div>
+                <img class="사람7" alt="사람7" src="http://media-cache-ak0.pinimg.com/236x/11/78/62/117862274ba746037a8679828dc0b9af.jpg">
+                <ul>
+                <li><b>Aruna Knight</b><span class="date2">Sep 29</span></li>
+                <li><b>Book you recommended</b></li>
+                <li class="li">About to go on a trip and was hoping to start that b...<span class="family">Family</span><img alt="star" src="http://google.github.io/material-design-icons/toggle/svg/ic_star_24px.svg"></li>
+               </ul>
+               
+        </div>
+        <hr>
+         <div>
+                <img class="사람8" alt="사람8" src="http://media-cache-ec0.pinimg.com/236x/07/bb/85/07bb85cc9656452f0aa33a10daeac478.jpg">
+                <ul>
+                <li>Paul Westbrook<span class="date3"><img alt="attachment" src="http://google.github.io/material-design-icons/file/svg/ic_attachment_24px.svg"> Sep 29</span></li>
+                <li class="li">Oops...need to reschedule<br>
+                That's okay Peter! I've attached a few pictures of my place f...<img alt="star_outline" src="http://google.github.io/material-design-icons/toggle/svg/ic_star_outline_24px.svg"></li>
+            </ul>
+        </div>
+          <hr>
+         <div>
+                <img class="사람9" alt="사람9" src="http://media-cache-ec0.pinimg.com/236x/53/14/db/5314db0fa37beff957ebc6e29a368b39.jpg">
+                <ul>
+                <li><b>Anissa Lee</b></li>
+                <li class="li">Furniture we no longer need</li>
+                
+            </ul>
+        </div>
+        </section>
+        <section class="content pane">
+           <h2> Board game night?</h2> <span class="fun">fun</span> <span class="inbox"> inbox</span>
+            <hr>
+               <div>
+                <img class="사람10" alt="사람10" src="http://media-cache-ec0.pinimg.com/736x/b1/ba/6a/b1ba6a49815e173da4f11ffa38b41118.jpg">
+                <ul>
+                <li>Regis Miller<span class="date4">Sep 29</span></li>
+                <li class="li">Maria, I'm trying to schedule a board game night this week, when would you be...</li>
+            </ul>
+        </div>
+        <hr>
+           <div>
+                <img class="사람11" alt="사람11" src="http://media-cache-ec0.pinimg.com/236x/27/5e/94/275e9450493dd2e9915fff5315fef8df.jpg">
+                <ul>
+                <li>Peter Johnson<span class="date5">Sep 29</span></li>
+                <li class="li">What do you think about Sunday? My car seats five so I could pick up Dexter a...</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+                <img class="사람12" alt="사람12" src="http://media-cache-ec0.pinimg.com/236x/66/b0/d7/66b0d7cba841b2d086e6c5cd26d16950.jpg">
+                <ul>
+                <li>Rachel Shin<img class="replay" alt="replay" src="http://google.github.io/material-design-icons/content/svg/ic_reply_24px.svg">
+        <img alt="forward" src="http://google.github.io/material-design-icons/content/svg/ic_forward_24px.svg">
+          <img alt="more_vert" src="http://google.github.io/material-design-icons/navigation/svg/ic_more_vert_24px.svg"></li>
+                
+                <li class="li">to me</li>
+                <li class="li">Sep 29 <a href="#">View details</a></li>
+            </ul>
+
+            <p>Sunday works! If you can get Dexter and Sophie I will handle the chips and salsa.</p>
+            <a href="#">▶ Show quoted text</a>
+        </div>
+        <hr>
+        <div class="last">
+        <ul>
+        <li><img alt="replay" src="http://google.github.io/material-design-icons/content/svg/ic_reply_24px.svg"><li>
+            <li>Reply</li>
+        </ul>
+        <ul>
+            <li>
+        <img alt="reply_all" src="http://google.github.io/material-design-icons/content/svg/ic_reply_all_24px.svg"></li>
+        <li>Reply all</li>
+    </ul>
+    <ul>
+        <li>
+        <img alt="forward" src="http://google.github.io/material-design-icons/content/svg/ic_forward_24px.svg"></li>
+        <li>Forward</li>
+</ul>
+</div>
+        </section>
+    </section>
+</body>
+</html>
