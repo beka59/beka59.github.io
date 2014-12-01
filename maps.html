@@ -6,7 +6,8 @@
 	<title>Google Maps</title>
 	<style>
       body{
-        font-family:"malgun gothic";
+        font-family:"malgun gothic", "sans-serif";
+        
           
       }
   .top{
@@ -30,6 +31,13 @@
     font-size:1.3em;
    
   }
+      .under{
+        position:fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+      }
       .under,.in,.top{
     padding-right:5%;
     padding-left:5%;
@@ -136,6 +144,11 @@
       @media(min-width:600px){
       .hour{
         float:right;
+      }
+      }
+      @media(max-height:700px){
+      .under{
+        overflow-y:scroll;
       }
       }
 	</style>
