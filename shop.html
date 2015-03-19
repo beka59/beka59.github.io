@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Combining Transform Functions</title>
+
+<style type="text/css">
+
+	body {
+		font: 1em Arial;
+      margin:auto;
+	}
+
+		body > div {
+			width: 700px;
+			margin:auto;
+		}
+
+			article {
+				width: 350px;
+				margin-top: 20px;
+				float: left;
+			}
+
+				article div {
+					width: 120px;
+					height: 150px;
+					background: #ccc;
+					float: left;
+					margin: 0 6px 6px 0;
+					text-align: center;
+					
+				}
+  article div img:hover {
+    -webkit-filter: brightness(100%) opacity() grayscale(0);
+    
+  }
+  
+  article div img { 
+					width: 120px;
+					height: 150px;
+      -webkit-filter: brightness(50%) opacity(60%) grayscale();
+				-webkit-transition: all 0.4s ease;
+								
+				}
+  
+  
+
+				label {
+					cursor: pointer;
+					
+				}
+
+				label:hover {
+					background: #eee;
+				}
+
+				input {
+					position: absolute;
+					left: -9999px;
+				}
+
+				input:checked + label {
+					font-weight: bold;
+                  
+				}
+
+				input:checked ~ article div {
+					-webkit-transform-origin: 0 0;
+				}
+
+				input[value="1"]:checked ~ article div:first-child {
+					-webkit-transform: translate(260px, 0) scale(3.13);
+                  -webkit-transition: all 1s ease;
+                  
+                  
+				}
+
+				input[value="2"]:checked ~ article div:nth-child(2) {
+					-webkit-transform: translate(135px, 0) scale(3.13);
+                    -webkit-transition: all 1s ease;
+				}
+
+				input[value="3"]:checked ~ article div:nth-child(3) {
+					-webkit-transform: translate(260px, -158px) scale(3.13);
+                    -webkit-transition: all 1s ease;
+				}
+
+				input[value="4"]:checked ~ article div:nth-child(4) {
+					-webkit-transform: translate(135px, -158px) scale(3.13);
+                    -webkit-transition: all 1s ease;
+				}
+
+				input[value="5"]:checked ~ article div:nth-child(5) {
+					-webkit-transform: translate(260px, -320px) scale(3.13);
+                    -webkit-transition: all 1s ease;
+				}
+
+				input[value="6"]:checked ~ article div:last-child {
+					-webkit-transform: translate(135px, -320px) scale(3.13);
+                    -webkit-transition: all 1s ease;
+				}
+  .header {
+    text-align:center;
+  }
+  .box{
+    margin-left:10px;
+  }
+  .box div {
+    position:center;
+    float:left;
+        width: 90px;
+	    text-align:center;
+        cursor: pointer;
+		background: -webkit-linear-gradient(top, #eee 0%, #ccc 100%);
+		border: 1px solid #bbb;
+		padding: 5px 15px;
+    
+    margin-bottom:50px;
+  }
+  .box div:hover{
+    background: -webkit-linear-gradient(top, #fff 0%, #ccc 100%);
+    font-weight: bold;
+  }
+	
+</style>
+
+</head>
+
+<body>
+  <div>
+  <div class="header"><a htef src=""><img alt="sovo" src="http://inetinet.ttcdn.com/sovomall/img2014/new_logo.gif"></a></div>
+    <div class="box">
+  <div>HEELS</div>
+    <div>FLATS</div>
+    <div>WEDGES</div>
+    <div>SNEAKER</div>
+    <div>PUMPS</div>
+      </div>
+
+	
+
+		<input id="one" name="transforms" type="radio" value="1">
+		<input id="two" name="transforms" type="radio" value="2">
+      <input id="three" name="transforms" type="radio" value="3">
+        <input id="four" name="transforms" type="radio" value="4">
+        <input id="five" name="transforms" type="radio" value="5">
+        <input id="six" name="transforms" type="radio" value="6">
+      
+		<article>
+          
+		    <div>
+              <label for="one"><img alt="shoes1" src="https://s-media-cache-ak0.pinimg.com/736x/ac/a5/d5/aca5d5999229ef3f1cfbababc1189da1.jpg"></label></div>
+          
+		    <div><label for="two"><img alt="shoes2" src="https://s-media-cache-ak0.pinimg.com/236x/0b/bb/7c/0bbb7cc36889de76b070d2eb02d2b002.jpg"></label></div>
+		    <div><label for="three"><img alt="shoes3" src="https://s-media-cache-ak0.pinimg.com/736x/0c/53/67/0c5367d73c940879dd30a1d26807b7da.jpg"></label></div>
+		    <div><label for="four"><img alt="shoes4" src="https://s-media-cache-ak0.pinimg.com/736x/6b/db/20/6bdb20a8f5849bf528f578fb276ced44.jpg"></label></div>
+		    <div><label for="five"><img alt="shoes5" src="https://s-media-cache-ak0.pinimg.com/736x/64/f8/f3/64f8f3cb5a09037667c7002476987f03.jpg"></label></div>
+		    <div><label for="six"><img alt="shoes6" src="https://s-media-cache-ak0.pinimg.com/736x/cf/0c/f3/cf0cf378bf847f54e4a714b0c4864d24.jpg"><label></div>
+		</article>
+
+	</div>
+
+</body>
+</html>
