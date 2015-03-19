@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Sovo</title>
+<title>Combining Transform Functions</title>
 
 <style type="text/css">
 
@@ -25,6 +25,7 @@
 				article div {
 					width: 120px;
 					height: 150px;
+					background: #ccc;
 					float: left;
 					margin: 0 6px 6px 0;
 					text-align: center;
@@ -50,11 +51,18 @@
 					
 				}
 
+				label:hover {
+					background: #eee;
+				}
+
 				input {
 					position: absolute;
 					left: -9999px;
 				}
 
+				input:checked + label {
+					font-weight: bold;
+                  
 				}
 
 				input:checked ~ article div {
