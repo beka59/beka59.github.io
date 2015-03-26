@@ -1,0 +1,204 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>21243071 박현석</title>
+<style type="text/css"></style>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+    
+   </script>
+  <script>
+$(function(){
+    $('label').hide();
+    $('.point').click(function(){
+        var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ')';
+$('label').css("color", hue);
+        
+        $('label').slideToggle("slow");
+        return false;
+      
+      
+    });
+});
+   
+    
+$('.titlehead').ready(function() { var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ')';
+$('label').css("color", hue);
+});
+
+  </script>
+<style type="text/css">
+.page{
+  width:80%;
+  height:1180px;
+  background-image: url("tatoositebackground.jpg");
+  margin:0 auto;
+}
+
+  .titlename{
+        -webkit-filter: hue-rotate(300deg);
+        -webkit-transition: all 3s ease;
+     width:30%;
+    margin:auto;
+    margin-left:35%;
+    margin-right:10%;
+    margin-top:5%;
+      }
+
+  .titlename:hover {
+          -webkit-filter: hue-rotate(0);
+      }
+
+ 
+  input{
+    position: absolute;
+   right:9999px;
+        }
+  
+.button{
+    font-size: 20px;
+  margin:auto;
+  margin-right: 20%;
+  margin-left: 36%;
+}
+  
+label{
+  margin:auto;
+ }
+.under{
+  margin-left:25%;
+  margin-right:24%;
+  border-bottom:solid 1px lightgray
+}
+  .point:hover{
+    cursor: pointer;
+  }
+  .point{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius:50px;
+    margin:auto;
+    margin-top:1%;
+  }
+  .collection{
+    padding-top:100px;
+  }
+  .collection li{
+    float:left;
+    list-style: none;
+    width:30%;
+    margin: 1em 1%;
+    padding: 0;
+    width: 31.2%;
+    box-shadow: 1px 1px 3px #AAA;
+    background-color: #FFF;
+    border-radius: 8px 8px 8px 8px;
+  }
+  .collection {
+  }
+  li:nth-child(1){height:370px;
+  -webkit-filter: opacity(0%);
+   -webkit-transition: all 0.4s ease;
+  }
+  li:nth-child(1):hover{height:370px;
+  -webkit-filter: opacity(100%);
+  }
+  li:nth-child(2){height:290px;
+  -webkit-filter: opacity(0%);
+   -webkit-transition: all 0.4s ease;
+  }
+  li:nth-child(2):hover{height:290px;
+  -webkit-filter: opacity(100%);
+  }
+  li:nth-child(3){height:290px;
+  -webkit-filter: opacity(0%);
+   -webkit-transition: all 0.4s ease;
+  }
+  li:nth-child(3):hover{height:290px;
+  -webkit-filter: opacity(100%);
+  }
+  li:nth-child(4){height:520px; margin-top:5px;
+  -webkit-filter: opacity(0%);
+   -webkit-transition: all 0.4s ease;
+  }
+  li:nth-child(4):hover{height:520px; margin-top:5px;
+  -webkit-filter: opacity(100%);
+  }
+
+
+  .collection img{
+    box-sizing: border-box;
+    width:100%;
+  }
+  .drowing{
+    width:250px;
+    border-radius: 8px 8px 8px 8px;
+    border-bottom:solid 1px lightgray;
+  }
+  .collection li h2{
+    font-family: DINEngschriftStd;
+    font-size: 18px;
+    text-align: center;
+  }
+  .drowing:nth-child(1){
+   -webkit-filter: opacity(0%);
+   -webkit-transition: all 0.4s ease;
+  }
+  .drowing:nth-child(1):hover{
+    -webkit-filter: opacity(100%);
+  }
+
+  
+</style>
+
+</head>
+
+<body>
+<div class="page">
+<div> 
+ <img src="titlename.png" class="titlename">
+</div>
+
+<input id="buttonone" name="click" type="radio" value="home">
+<input id="buttontwo" name="click" type="radio" value="About lisviathan">
+<input id="buttonthree" name="click" type="radio" value="Gallery">
+<input id="buttonfour" name="click" type="radio" value="Board">
+<input id="buttonfive" name="click" type="radio" value="Location">
+<div class="button">
+<label for="buttonone">Home</label>
+<label for="buttontwo">About lesviathan</label>
+<label for="buttonthree">Gallery</label>
+<label for="buttonfour">Board</label>
+<label for="buttonfive">Location</label>
+</div>
+  <div class="under"></div>
+  <div class="point"></div>  
+
+<ul class="collection">
+  <li>
+    <img src="leviathan.jpg" class="drowing">
+    <h2>leviathan</h2>
+  </li>
+  <li>
+    <img src="smooooooking.jpg" class="drowing">
+    <h2>smooking</h2>
+  </li>
+  <li>
+  <img src="rainger.jpg" class="drowing">
+  <h2>rainger</h2>
+  </li>
+  <li>
+  <img src="wolftatoo.jpg" class="drowing">
+  <h2>wolf</h2>
+  </li>
+</ul>
+
+</div>
+</body>
+</html>
